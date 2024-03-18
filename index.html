@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit</title>
+    <style>
+        :root {
+            --width: 50vw;
+            --height: 54px;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: var(--width);
+            height: var(--height);
+            margin: calc(var(--height) / -2) 0 0 calc(var(--width) / -2);
+        }
+        .container > audio {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <audio controls="">
+            <source src="https://traffic.omny.fm/d/clips/6dcbc33f-1fb6-49de-9ae2-ad8a00c01523/e3da8f4a-5f3c-46a0-b421-ade9007d4064/43e1a040-412b-41a4-8c9f-b136014c340b/audio.mp3?utm_source=Podcast&amp;in_playlist=6abc5cf4-b054-4c41-85cb-ade9007e6c08#t=00:45:14" id="audioSource">
+        </audio>
+    </div>
+</body>
+</html>
